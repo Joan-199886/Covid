@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrar">
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:hint="CREAR NUEVO USUARIO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/PassR"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:hint="Contraseña"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/direccion" />
+
+
+    <EditText
+        android:id="@+id/NombreR"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:hint="Nombre"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correo" />
+
+    <EditText
+        android:id="@+id/ApellidoR"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:hint="Apellido"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NombreR" />
+
+    <EditText
+        android:id="@+id/documento"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:hint="documento"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ApellidoR" />
+
+    <EditText
+        android:id="@+id/direccion"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:hint="Direccion"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/documento" />
+
+    <EditText
+        android:id="@+id/telefono"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="4dp"
+        android:hint="Telefono"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PassR" />
+
+    <Button
+        android:id="@+id/Registrar"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Registrarse"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/telefono" />
+
+    <Button
+        android:id="@+id/Salir"
+        android:layout_width="298dp"
+        android:layout_height="59dp"
+
+        android:layout_marginTop="5dp"
+        android:text="Salir"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Registrar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
